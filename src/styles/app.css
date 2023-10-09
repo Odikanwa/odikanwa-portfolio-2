@@ -7,9 +7,9 @@ body {
 }
 
 :root {
-  --purple: #540351;
-  --blue: #3627b1;
-  --cyan: #25afce;
+  --purple: #960018;
+  --blue: #960018;
+  --cyan: #960018;
   --transparent: #00000000;
   --radius-left: 3rem 0 0 3rem;
   --radius-right: 0 3rem 3rem 0;

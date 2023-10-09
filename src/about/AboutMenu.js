@@ -30,10 +30,10 @@ export default class AboutMenu extends Component {
 
   render() {
     const { activeMenuItem, activeSubheading } = this.state;
-    const menuItems = ["PERSONAL", "EDUCATION", "CAREER"];
+    const menuItems = ["INTRO.", "EDUCATION", "CAREER"];
     const activeMenuTitle = menuItems[activeMenuItem - 1];
     const activeMenuIcon =
-      activeMenuTitle === "PERSONAL"
+      activeMenuTitle === "INTRO."
         ? personalIcon
         : activeMenuTitle === "EDUCATION"
         ? educationIcon
