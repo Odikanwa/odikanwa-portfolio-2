@@ -30,7 +30,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 32%;
+  top: 25%;
   right: 10vw;
   cursor: pointer;
 }

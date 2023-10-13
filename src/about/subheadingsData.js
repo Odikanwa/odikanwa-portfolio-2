@@ -19,9 +19,8 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Curriculum: Server-side development(Nodejs, Expressjs), API design
-            and implementation, database integration and management, backend
-            optimisation, application deployment and hosting.
+            Server-side development, API implementation, database integration and management, backend
+            optimisation, deployment.
           </p>
         </>
       ),
