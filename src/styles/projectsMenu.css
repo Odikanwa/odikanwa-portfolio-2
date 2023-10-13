@@ -46,6 +46,7 @@
 }
 
 .project-sub-container {
+  height: auto;
   width: 60%;
   margin-top: 2rem;
   display: flex;
@@ -58,6 +59,7 @@
 }
 .project-sub-container img {
   width: 100%;
+  height: 60%;
   object-fit: cover;
   border-radius: 0.5rem 3rem 0.5rem 0.5rem;
   opacity: 0.9;

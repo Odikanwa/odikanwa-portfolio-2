@@ -8,7 +8,6 @@ import "../styles/nav.css";
 
 export default function Nav() {
   const location = useLocation();
-
   const getNavPositionClass = () => {
     switch (location.pathname) {
       case "/":
