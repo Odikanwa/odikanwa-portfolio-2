@@ -30,7 +30,7 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Curriculum: Python, Linear Programming, data structures, algorithms,
+            Python, Linear Programming, data structures, algorithms,
             algorithms on graphs, algorithms on strings, advanced algorithms &
             complexity.
           </p>
@@ -42,7 +42,7 @@ const subheadingsData = {
       content: (
         <>
           <p>
-            Curriculum: SQL & data modelling, API development & documentation,
+            SQL & data modelling, API development & documentation,
             Identity Access Management, server deployment & containerization.
           </p>
         </>
