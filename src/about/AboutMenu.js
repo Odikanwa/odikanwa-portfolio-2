@@ -1,35 +1,29 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import AboutMenuItem from "./AboutMenuItem";
 import AboutSubheading from "./AboutSubheading";
 import subheadingsData from "./subheadingsData";
 import personalIcon from "../assets/moebius-triangle.png";
 import educationIcon from "../assets/upgrade.png";
 import careerIcon from "../assets/triple-corn.png";
+// import { useTypingEffect } from "../hooks/typing-effect";
 
-export default class AboutMenu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeMenuItem: 1,
-      activeSubheading: 1,
-    };
-  }
 
-  handleMenuItemClick = (menuItem) => {
-    this.setState({
-      activeMenuItem: menuItem,
-      activeSubheading: 1,
-    });
+const AboutMenu = () => {
+  
+  const [activeMenuItem, setActiveMenuItem] = useState(1);
+  const [activeSubheading, setActiveSubheading] = useState(1);
+
+  const handleMenuItemClick = (menuItem) => {
+    setActiveMenuItem(menuItem);
+    setActiveSubheading(1)
   };
 
-  handleSubheadingClick = (subheading) => {
-    this.setState({
-      activeSubheading: subheading,
-    });
+  const handleSubheadingClick = (subheading) => {
+    setActiveSubheading(subheading)
   };
 
-  render() {
-    const { activeMenuItem, activeSubheading } = this.state;
+  
+
     const menuItems = ["INTRO.", "EDUCATION", "CAREER"];
     const activeMenuTitle = menuItems[activeMenuItem - 1];
     const activeMenuIcon =
@@ -40,7 +34,8 @@ export default class AboutMenu extends Component {
         : careerIcon;
 
     const subheadings = subheadingsData[activeMenuItem];
-
+    // const text = useTypingEffect(, 100);
+    
     return (
       <>
         <div className="menu">
@@ -49,7 +44,7 @@ export default class AboutMenu extends Component {
               key={index}
               title={item}
               active={activeMenuItem === index + 1}
-              onClick={() => this.handleMenuItemClick(index + 1)}
+              onClick={() => handleMenuItemClick(index + 1)}
             />
           ))}
         </div>
@@ -64,7 +59,7 @@ export default class AboutMenu extends Component {
               title={subheading.title}
               content={subheading.content}
               active={activeSubheading === index + 1}
-              onClick={() => this.handleSubheadingClick(index + 1)}
+              onClick={() => handleSubheadingClick(index + 1)}
               menuItem={activeMenuItem}
             />
           ))}
@@ -72,4 +67,6 @@ export default class AboutMenu extends Component {
       </>
     );
   }
-}
+
+
+export default AboutMenu;

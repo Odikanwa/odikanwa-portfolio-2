@@ -38,6 +38,10 @@ h2 {
   width: 6.2rem;
 }
 
+#developer-level {
+  color: greenyellow;
+}
+
 @media (max-width: 1100px) {
   #playerStats {
     left: 50%;
